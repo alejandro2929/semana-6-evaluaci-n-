@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppComida - Tu mejor opción</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+        body { background: #eceeef; color: #000; }
+        header { display: flex; justify-content: space-between; align-items: center; background: #e8505b; color: #fff; padding: 10px 20px; }
+        .logo { font-size: 24px; font-weight: bold; }
+        .nav-links { font-size: 14px; }
+        .nav-links a { margin-left: 15px; text-decoration: none; color: #fff; }
+        .banner { display: flex; justify-content: center; align-items: center; padding: 50px; background: #fff; }
+        .banner-content { display: flex; gap: 20px; max-width: 900px; }
+        .banner img { width: 300px; border-radius: 10px; }
+        .banner h2 { color: #455a64; font-size: 28px; }
+        .banner button { background: #e8505b; color: #fff; border: none; padding: 10px 20px; margin-top: 10px; cursor: pointer; font-size: 16px; border-radius: 5px; }
+        .pasos, .testimonios, .favoritos { text-align: center; padding: 50px; background: #fff; }
+        .pasos-container, .testimonios-container, .favoritos-container { display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .paso, .card, .restaurant-card { background: #455a64; color: #fff; padding: 20px; border-radius: 10px; width: 250px; text-align: center; }
+        .paso img, .card img, .restaurant-card img { width: 80px; border-radius: 50%; margin-bottom: 10px; }
+        .restaurant-card { background: #fff; color: #000; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
+        footer { background: #455a64; color: #fff; padding: 30px 0; text-align: center; }
+        .footer-content { display: flex; justify-content: space-around; max-width: 900px; margin: auto; text-align: left; }
+        .footer-section h3 { margin-bottom: 10px; }
+        .footer-section ul { list-style: none; }
+        .footer-section ul li { margin: 5px 0; }
+        .footer-section ul li a { color: #fff; text-decoration: none; }
+        .copyright { background: #e8505b; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">AppComida</div>
+        <nav class="nav-links">
+            <a href="#">Iniciar Sesión</a>
+            <a href="#">Crear Cuenta</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <img src="dibujo_repartidor.png" alt="Imagen">
+            <div>
+                <h2>Encuentra y Pide comida de tu restaurante favorito</h2>
+                <input type="text" placeholder="Restaurant">
+                <input type="text" placeholder="Platillo">
+                <button>Buscar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pasos">
+        <h2>¿Cómo funciona?</h2>
+        <div class="pasos-container">
+            <div class="paso">
+                <img src="paso1.png" alt="Imagen ">
+                <h3>Busca tu restaurante</h3>
+            </div>
+            <div class="paso">
+                <img src="paso2.png" alt="Imagen ">
+                <h3>Elige tu comida</h3>
+            </div>
+            <div class="paso">
+                <img src="paso3.png" alt="Imagen">
+                <h3>Recíbela en tu casa</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-container">
+            <div class="card">
+                <img src="test1.jpg" alt="Imagen ">
+                <h3>Juan Perez</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Excelente servicio y rápida entrega.</p>
+            </div>
+            <div class="card">
+                <img src="test2.jpg" alt="Imagen ">
+                <h3>Cynthia V</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Variedad de opciones y muy fácil de usar.</p>
+            </div>
+            <div class="card">
+                <img src="test3.jpg" alt="Imagen debe ir aquí">
+                <h3>Jose Hernandez</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Comida siempre fresca y deliciosa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="favoritos">
+        <h2>Restaurantes Favoritos</h2>
+        <div class="favoritos-container">
+            <div class="restaurant-card">
+                <img src="ensa.png" alt="Imagen debe ir aquí">
+                <h3>Green Ensaladas</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Las mejores ensaladas frescas.</p>
+            </div>
+            <div class="restaurant-card">
+                <img src="pizza.png" alt="Imagen debe ir aquí">
+                <h3>Pizza Express</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Pizzas artesanales listas en minutos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nosotros</h3>
+                <p>Conectamos los mejores restaurantes con los clientes más exigentes.</p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 AppComida. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
